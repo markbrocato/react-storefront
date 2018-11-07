@@ -22,7 +22,7 @@ function createClientConfig(
     }, entries),
     resolve: {
       alias: Object.assign({}, createAliases(root), {
-        fetch: 'isomorphic-unfetch'
+        fetch: path.join(root, 'node_modules', 'react-storefront', 'src', 'fetch', 'browserFetch')
       })
     },
     output: {

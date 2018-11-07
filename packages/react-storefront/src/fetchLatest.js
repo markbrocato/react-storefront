@@ -2,6 +2,7 @@
  * @license
  * Copyright © 2017-2018 Moov Corporation.  All rights reserved.
  */
+
 /**
  * Creates a fetch function with an internal incrementing request counter that ensures that out of order
  * responses result in a StaleResponseError.

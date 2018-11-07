@@ -16,7 +16,7 @@ let doFetch
  */
 export async function fetch(url, { cache='default' } = {}) {
   abortPrefetches()
-  doFetch = doFetch || fetchLatest(require('isomorphic-unfetch'))
+  doFetch = doFetch || fetchLatest(require('../fetch/browserFetch').default)
 
   const { href } = location
 
