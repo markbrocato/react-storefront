@@ -13,6 +13,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import Track from './Track'
 import Link from './Link'
 import { relativeURL } from './utils/url'
+import Tab from '@material-ui/core/Tab'
 
 /**
  * Scrollable navigation tabs for the top of the app. All extra props are spread to the 
@@ -20,12 +21,19 @@ import { relativeURL } from './utils/url'
  * event is fired.
  */
 export const styles = theme => ({
-  tab: {
-    height: '56px',
-  },
   tabs: {
     maxWidth: theme.maxWidth,
     flex: 1,
+  },
+  tab: {
+    height: '56px',
+    fontWeight: 300,
+    minWidth: '20px',
+    position: 'relative'
+  },
+  selectedTab: {
+    fontWeight: 500,
+    opacity: 1
   },
   link: {
     display: 'block',
@@ -103,8 +111,7 @@ export default class NavTabs extends Component {
           tabRenderer={this.renderTab}
           centered
           classes={{
-            root: classes.tabs,
-            tab: classes.tab
+            root: classes.tabs
           }}
           {...tabsProps}
         />
@@ -112,16 +119,30 @@ export default class NavTabs extends Component {
     )
   }
 
-  renderTab = item => {
+  renderTab = (item, i) => {
     const { classes } = this.props
 
     return (
-      <Fragment>
-        <Track event="topNavClicked" item={item}>
-          <div className={classes.clickEl} data-th="topNavClicked"></div>
-        </Track>
-        <Link state={() => item.state && JSON.parse(item.state)} className={classes.link} to={item.url} prefetch={item.prefetch} onClick={this.onLinkClick}>{item.text}</Link>
-      </Fragment>
+      <Track key={i} event="topNavClicked" item={item}>
+        <Tab
+          classes={{
+            root: classes.tab,
+            selected: classes.selectedTab
+          }}
+          label={
+            <Link 
+              state={() => item.state && JSON.parse(item.state)} 
+              className={classes.link} 
+              to={item.url} 
+              prefetch={item.prefetch} 
+              onClick={this.onLinkClick}
+              data-th="topNavClicked"
+            >
+              {item.text}
+            </Link>
+          }
+        />
+      </Track>
     )
   }
 
@@ -129,6 +150,8 @@ export default class NavTabs extends Component {
     const { tabs, history } = this.props
     const item = tabs.items[newValue]
     const url = relativeURL(item.url)
+
+    analytics.topNavClicked
 
     if (history) {
       history.push(url, item.state && JSON.parse(item.state))

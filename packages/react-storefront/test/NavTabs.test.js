@@ -66,7 +66,8 @@ describe('NavTabs', () => {
   })
 
   it('fires the topNavClicked event when clicked', () => {
-    const topNavClicked = jest.fn()
+    let item
+    const topNavClicked = data => item = data.item
     configureAnalytics({ topNavClicked })
 
     mount(
@@ -78,7 +79,7 @@ describe('NavTabs', () => {
       .at(0)
       .simulate('click')    
 
-    waitForAnalytics(() => expect(topNavClicked).toHaveBeenCalledWith({ item: app.tabs.items[0] }))
+    waitForAnalytics(() => expect(item).toEqual(app.tabs.items[0]))
   })
 
   it('pushes the item state onto history when clicked', () => {
@@ -87,7 +88,7 @@ describe('NavTabs', () => {
         <NavTabs/>
       </Provider>
     )
-      .find('button').at(0)
+      .find('a').at(0)
       .simulate('click')    
 
     expect(history.location.state).toEqual({ page: 'product' })

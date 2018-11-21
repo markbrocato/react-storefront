@@ -4,22 +4,22 @@ exports[`ExpandableSection should render 1`] = `
 <Provider app={{...}}>
   <MuiThemeProvider theme={{...}}>
     <WithStyles(WithTheme(inject-ExpandableSection)) title="Title">
-      <WithTheme(inject-ExpandableSection) classes={{...}} title="Title">
-        <inject-ExpandableSection theme={{...}} classes={{...}} title="Title">
-          <ExpandableSection theme={{...}} classes={{...}} title="Title" amp={false}>
+      <WithTheme(inject-ExpandableSection) title="Title" classes={{...}}>
+        <inject-ExpandableSection theme={{...}} title="Title" classes={{...}}>
+          <ExpandableSection theme={{...}} title="Title" classes={{...}} amp={false}>
             <WithStyles(ExpansionPanel) classes={{...}} expanded={[undefined]} onChange={[Function]}>
-              <ExpansionPanel classes={{...}} expanded={[undefined]} onChange={[Function]} defaultExpanded={false} disabled={false}>
+              <ExpansionPanel expanded={[undefined]} onChange={[Function]} classes={{...}} defaultExpanded={false} disabled={false}>
                 <WithStyles(Paper) className="MuiExpansionPanel-root-10 RSFExpandableSection-root-1" elevation={1} square={true}>
-                  <Paper classes={{...}} className="MuiExpansionPanel-root-10 RSFExpandableSection-root-1" elevation={1} square={true} component="div">
+                  <Paper className="MuiExpansionPanel-root-10 RSFExpandableSection-root-1" elevation={1} square={true} classes={{...}} component="div">
                     <div className="MuiPaper-root-13 MuiPaper-elevation1-16 MuiExpansionPanel-root-10 RSFExpandableSection-root-1">
-                      <WithStyles(ExpansionPanelSummary) expandIcon={{...}} classes={{...}} disabled={false} expanded={false} onChange={[Function: value]}>
-                        <ExpansionPanelSummary classes={{...}} expandIcon={{...}} disabled={false} expanded={false} onChange={[Function: value]}>
-                          <WithStyles(ButtonBase) focusRipple={false} disableRipple={true} disabled={false} component="div" aria-expanded={false} className="MuiExpansionPanelSummary-root-40" onFocusVisible={[Function: value]} onBlur={[Function: value]} onClick={[Function: value]}>
-                            <ButtonBase classes={{...}} focusRipple={false} disableRipple={true} disabled={false} component="div" aria-expanded={false} className="MuiExpansionPanelSummary-root-40" onFocusVisible={[Function: value]} onBlur={[Function: value]} onClick={[Function: value]} centerRipple={false} tabIndex="0" type="button">
-                              <div onBlur={[Function: handleEvent]} onFocus={[Function: value]} onKeyDown={[Function: value]} onKeyUp={[Function: value]} onMouseDown={[Function: handleEvent]} onMouseLeave={[Function: handleEvent]} onMouseUp={[Function: handleEvent]} onTouchEnd={[Function: handleEvent]} onTouchMove={[Function: handleEvent]} onTouchStart={[Function: handleEvent]} tabIndex="0" className="MuiButtonBase-root-46 MuiExpansionPanelSummary-root-40" role="button" aria-expanded={false} onClick={[Function: value]}>
+                      <WithStyles(ExpansionPanelSummary) expandIcon={{...}} classes={{...}} disabled={false} expanded={false} onChange={[Function]}>
+                        <ExpansionPanelSummary expandIcon={{...}} disabled={false} expanded={false} onChange={[Function]} classes={{...}}>
+                          <WithStyles(ButtonBase) focusRipple={false} disableRipple={true} disabled={false} component="div" aria-expanded={false} className="MuiExpansionPanelSummary-root-40" onFocusVisible={[Function]} onBlur={[Function]} onClick={[Function]}>
+                            <ButtonBase focusRipple={false} disableRipple={true} disabled={false} component="div" aria-expanded={false} className="MuiExpansionPanelSummary-root-40" onFocusVisible={[Function]} onBlur={[Function]} onClick={[Function]} classes={{...}} centerRipple={false} disableTouchRipple={false} tabIndex="0" type="button">
+                              <div className="MuiButtonBase-root-46 MuiExpansionPanelSummary-root-40" onBlur={[Function]} onFocus={[Function]} onKeyDown={[Function]} onKeyUp={[Function]} onMouseDown={[Function]} onMouseLeave={[Function]} onMouseUp={[Function]} onTouchEnd={[Function]} onTouchMove={[Function]} onTouchStart={[Function]} tabIndex="0" role="button" aria-expanded={false} onClick={[Function]}>
                                 <div className="MuiExpansionPanelSummary-content-44 RSFExpandableSection-summary-6">
                                   <WithStyles(Typography) variant="subheading">
-                                    <Typography classes={{...}} variant="subheading" align="inherit" color="default" gutterBottom={false} headlineMapping={{...}} noWrap={false} paragraph={false}>
+                                    <Typography variant="subheading" theme={{...}} classes={{...}} align="inherit" color="default" gutterBottom={false} headlineMapping={{...}} noWrap={false} paragraph={false}>
                                       <h3 className="MuiTypography-root-49 MuiTypography-subheading-56">
                                         Title
                                       </h3>
@@ -27,32 +27,33 @@ exports[`ExpandableSection should render 1`] = `
                                   </WithStyles(Typography)>
                                 </div>
                                 <WithStyles(IconButton) disabled={false} className="MuiExpansionPanelSummary-expandIcon-45" component="div" tabIndex={-1} aria-hidden="true">
-                                  <IconButton classes={{...}} disabled={false} className="MuiExpansionPanelSummary-expandIcon-45" component="div" tabIndex={-1} aria-hidden="true" color="default">
-                                    <WithStyles(ButtonBase) className="MuiIconButton-root-73 MuiExpansionPanelSummary-expandIcon-45" centerRipple={true} focusRipple={true} disabled={false} component="div" tabIndex={-1} aria-hidden="true">
-                                      <ButtonBase classes={{...}} className="MuiIconButton-root-73 MuiExpansionPanelSummary-expandIcon-45" centerRipple={true} focusRipple={true} disabled={false} component="div" tabIndex={-1} aria-hidden="true" disableRipple={false} type="button">
-                                        <div onBlur={[Function: handleEvent]} onFocus={[Function: value]} onKeyDown={[Function: value]} onKeyUp={[Function: value]} onMouseDown={[Function: handleEvent]} onMouseLeave={[Function: handleEvent]} onMouseUp={[Function: handleEvent]} onTouchEnd={[Function: handleEvent]} onTouchMove={[Function: handleEvent]} onTouchStart={[Function: handleEvent]} tabIndex={-1} className="MuiButtonBase-root-46 MuiIconButton-root-73 MuiExpansionPanelSummary-expandIcon-45" role="button" aria-hidden="true">
-                                          <span className="MuiIconButton-label-78">
-                                            <pure(ExpandMore) className="RSFExpandableSection-expandIcon-8">
-                                              <ExpandMore className="RSFExpandableSection-expandIcon-8">
+                                  <IconButton disabled={false} className="MuiExpansionPanelSummary-expandIcon-45" component="div" tabIndex={-1} aria-hidden="true" classes={{...}} color="default">
+                                    <WithStyles(ButtonBase) className="MuiIconButton-root-84 MuiExpansionPanelSummary-expandIcon-45" centerRipple={true} focusRipple={true} disabled={false} component="div" tabIndex={-1} aria-hidden="true">
+                                      <ButtonBase className="MuiIconButton-root-84 MuiExpansionPanelSummary-expandIcon-45" centerRipple={true} focusRipple={true} disabled={false} component="div" tabIndex={-1} aria-hidden="true" classes={{...}} disableRipple={false} disableTouchRipple={false} type="button">
+                                        <div className="MuiButtonBase-root-46 MuiIconButton-root-84 MuiExpansionPanelSummary-expandIcon-45" onBlur={[Function]} onFocus={[Function]} onKeyDown={[Function]} onKeyUp={[Function]} onMouseDown={[Function]} onMouseLeave={[Function]} onMouseUp={[Function]} onTouchEnd={[Function]} onTouchMove={[Function]} onTouchStart={[Function]} tabIndex={-1} role="button" aria-hidden="true">
+                                          <span className="MuiIconButton-label-89">
+                                            <pure(ExpandMoreIcon) className="RSFExpandableSection-expandIcon-8">
+                                              <ExpandMoreIcon className="RSFExpandableSection-expandIcon-8">
                                                 <WithStyles(SvgIcon) className="RSFExpandableSection-expandIcon-8">
-                                                  <SvgIcon classes={{...}} className="RSFExpandableSection-expandIcon-8" color="inherit" viewBox="0 0 24 24">
-                                                    <svg className="MuiSvgIcon-root-79 RSFExpandableSection-expandIcon-8" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true">
-                                                      <g>
-                                                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                                                      </g>
+                                                  <SvgIcon className="RSFExpandableSection-expandIcon-8" classes={{...}} color="inherit" component="svg" fontSize="default" viewBox="0 0 24 24">
+                                                    <svg className="MuiSvgIcon-root-90 RSFExpandableSection-expandIcon-8" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true" role="presentation">
+                                                      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                                                      <path fill="none" d="M0 0h24v24H0z" />
                                                     </svg>
                                                   </SvgIcon>
                                                 </WithStyles(SvgIcon)>
-                                              </ExpandMore>
-                                            </pure(ExpandMore)>
+                                              </ExpandMoreIcon>
+                                            </pure(ExpandMoreIcon)>
                                           </span>
-                                          <WithStyles(TouchRipple) innerRef={[Function: value]} center={true}>
-                                            <TouchRipple classes={{...}} center={true}>
-                                              <TransitionGroup component="span" enter={true} exit={true} className="MuiTouchRipple-root-85" childFactory={[Function: childFactory]}>
-                                                <span className="MuiTouchRipple-root-85" />
-                                              </TransitionGroup>
-                                            </TouchRipple>
-                                          </WithStyles(TouchRipple)>
+                                          <NoSsr defer={false} fallback={{...}}>
+                                            <WithStyles(TouchRipple) innerRef={[Function]} center={true}>
+                                              <TouchRipple center={true} classes={{...}}>
+                                                <TransitionGroup component="span" enter={true} exit={true} className="MuiTouchRipple-root-104" childFactory={[Function: childFactory]}>
+                                                  <span className="MuiTouchRipple-root-104" />
+                                                </TransitionGroup>
+                                              </TouchRipple>
+                                            </WithStyles(TouchRipple)>
+                                          </NoSsr>
                                         </div>
                                       </ButtonBase>
                                     </WithStyles(ButtonBase)>
@@ -64,14 +65,14 @@ exports[`ExpandableSection should render 1`] = `
                         </ExpansionPanelSummary>
                       </WithStyles(ExpansionPanelSummary)>
                       <WithStyles(Collapse) in={false} timeout="auto" aria-hidden="true">
-                        <Collapse theme={{...}} classes={{...}} in={false} timeout="auto" aria-hidden="true" collapsedHeight="0px" component="div">
-                          <Transition onEnter={[Function: value]} onEntered={[Function: value]} onEntering={[Function: value]} onExit={[Function: value]} onExiting={[Function: value]} addEndListener={[Function: value]} timeout={{...}} in={false} aria-hidden="true" mountOnEnter={false} unmountOnExit={false} appear={false} enter={true} exit={true} onExited={[Function: noop]}>
-                            <div className="MuiCollapse-container-92" style={{...}} aria-hidden="true">
-                              <div className="MuiCollapse-wrapper-94">
-                                <div className="MuiCollapse-wrapperInner-95">
+                        <Collapse in={false} timeout="auto" aria-hidden="true" theme={{...}} classes={{...}} collapsedHeight="0px" component="div">
+                          <Transition onEnter={[Function]} onEntered={[Function]} onEntering={[Function]} onExit={[Function]} onExiting={[Function]} addEndListener={[Function]} timeout={{...}} in={false} aria-hidden="true" mountOnEnter={false} unmountOnExit={false} appear={false} enter={true} exit={true} onExited={[Function: noop]}>
+                            <div className="MuiCollapse-container-99" style={{...}} aria-hidden="true">
+                              <div className="MuiCollapse-wrapper-101">
+                                <div className="MuiCollapse-wrapperInner-102">
                                   <WithStyles(ExpansionPanelDetails) classes={{...}}>
                                     <ExpansionPanelDetails classes={{...}}>
-                                      <div className="MuiExpansionPanelDetails-root-96 RSFExpandableSection-details-5">
+                                      <div className="MuiExpansionPanelDetails-root-103 RSFExpandableSection-details-5">
                                         Foo
                                       </div>
                                     </ExpansionPanelDetails>
@@ -99,52 +100,50 @@ exports[`ExpandableSection should render AmpExpandableSection when amp == true 1
 <Provider app={{...}}>
   <MuiThemeProvider theme={{...}}>
     <WithStyles(WithTheme(inject-ExpandableSection)) title="Title">
-      <WithTheme(inject-ExpandableSection) classes={{...}} title="Title">
-        <inject-ExpandableSection theme={{...}} classes={{...}} title="Title">
-          <ExpandableSection theme={{...}} classes={{...}} title="Title" amp={true}>
+      <WithTheme(inject-ExpandableSection) title="Title" classes={{...}}>
+        <inject-ExpandableSection theme={{...}} title="Title" classes={{...}}>
+          <ExpandableSection theme={{...}} title="Title" classes={{...}} amp={true}>
             <WithStyles(AmpExpandableSection) ExpandIcon={[Function: ShouldUpdate]} CollapseIcon={[Function: ShouldUpdate]} title="Title">
-              <AmpExpandableSection classes={{...}} ExpandIcon={[Function: ShouldUpdate]} CollapseIcon={[Function: ShouldUpdate]} title="Title" expanded={false}>
+              <AmpExpandableSection ExpandIcon={[Function: ShouldUpdate]} CollapseIcon={[Function: ShouldUpdate]} title="Title" classes={{...}} expanded={false}>
                 <HelmetWrapper defer={true} encodeSpecialCharacters={true}>
                   <SideEffect(NullComponent) defer={true} encodeSpecialCharacters={true} script={{...}}>
                     <NullComponent defer={true} encodeSpecialCharacters={true} script={{...}} />
                   </SideEffect(NullComponent)>
                 </HelmetWrapper>
-                <amp-accordion disable-session-states={true} class="MoovAmpExpandableSection-accordion-106">
-                  <section className="MoovAmpExpandableSection-section-108">
-                    <WithStyles(Typography) variant="subheading" component="h3" className="MoovAmpExpandableSection-title-107">
-                      <Typography classes={{...}} variant="subheading" component="h3" className="MoovAmpExpandableSection-title-107" align="inherit" color="default" gutterBottom={false} headlineMapping={{...}} noWrap={false} paragraph={false}>
-                        <h3 className="MuiTypography-root-113 MuiTypography-subheading-120 MoovAmpExpandableSection-title-107">
+                <amp-accordion disable-session-states={true} class="MoovAmpExpandableSection-accordion-120">
+                  <section className="MoovAmpExpandableSection-section-122">
+                    <WithStyles(Typography) variant="subheading" component="h3" className="MoovAmpExpandableSection-title-121">
+                      <Typography variant="subheading" component="h3" className="MoovAmpExpandableSection-title-121" theme={{...}} classes={{...}} align="inherit" color="default" gutterBottom={false} headlineMapping={{...}} noWrap={false} paragraph={false}>
+                        <h3 className="MuiTypography-root-127 MuiTypography-subheading-134 MoovAmpExpandableSection-title-121">
                           Title
-                          <pure(ExpandMore) className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-collapse-111">
-                            <ExpandMore className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-collapse-111">
-                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-collapse-111">
-                                <SvgIcon classes={{...}} className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-collapse-111" color="inherit" viewBox="0 0 24 24">
-                                  <svg className="MuiSvgIcon-root-137 MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-collapse-111" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true">
-                                    <g>
-                                      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                                    </g>
+                          <pure(ExpandMoreIcon) className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-collapse-125">
+                            <ExpandMoreIcon className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-collapse-125">
+                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-collapse-125">
+                                <SvgIcon className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-collapse-125" classes={{...}} color="inherit" component="svg" fontSize="default" viewBox="0 0 24 24">
+                                  <svg className="MuiSvgIcon-root-162 MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-collapse-125" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true" role="presentation">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                                    <path fill="none" d="M0 0h24v24H0z" />
                                   </svg>
                                 </SvgIcon>
                               </WithStyles(SvgIcon)>
-                            </ExpandMore>
-                          </pure(ExpandMore)>
-                          <pure(ExpandMore) className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-expand-110">
-                            <ExpandMore className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-expand-110">
-                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-expand-110">
-                                <SvgIcon classes={{...}} className="MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-expand-110" color="inherit" viewBox="0 0 24 24">
-                                  <svg className="MuiSvgIcon-root-137 MoovAmpExpandableSection-toggle-109 MoovAmpExpandableSection-expand-110" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true">
-                                    <g>
-                                      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                                    </g>
+                            </ExpandMoreIcon>
+                          </pure(ExpandMoreIcon)>
+                          <pure(ExpandMoreIcon) className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-expand-124">
+                            <ExpandMoreIcon className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-expand-124">
+                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-expand-124">
+                                <SvgIcon className="MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-expand-124" classes={{...}} color="inherit" component="svg" fontSize="default" viewBox="0 0 24 24">
+                                  <svg className="MuiSvgIcon-root-162 MoovAmpExpandableSection-toggle-123 MoovAmpExpandableSection-expand-124" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true" role="presentation">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                                    <path fill="none" d="M0 0h24v24H0z" />
                                   </svg>
                                 </SvgIcon>
                               </WithStyles(SvgIcon)>
-                            </ExpandMore>
-                          </pure(ExpandMore)>
+                            </ExpandMoreIcon>
+                          </pure(ExpandMoreIcon)>
                         </h3>
                       </Typography>
                     </WithStyles(Typography)>
-                    <div className="MoovAmpExpandableSection-body-112">
+                    <div className="MoovAmpExpandableSection-body-126">
                       Foo
                     </div>
                   </section>
@@ -163,52 +162,50 @@ exports[`ExpandableSection should render expanded when expanded=true 1`] = `
 <Provider app={{...}}>
   <MuiThemeProvider theme={{...}}>
     <WithStyles(WithTheme(inject-ExpandableSection)) title="Title" expanded={true}>
-      <WithTheme(inject-ExpandableSection) classes={{...}} title="Title" expanded={true}>
-        <inject-ExpandableSection theme={{...}} classes={{...}} title="Title" expanded={true}>
-          <ExpandableSection theme={{...}} classes={{...}} title="Title" expanded={true} amp={true}>
+      <WithTheme(inject-ExpandableSection) title="Title" expanded={true} classes={{...}}>
+        <inject-ExpandableSection theme={{...}} title="Title" expanded={true} classes={{...}}>
+          <ExpandableSection theme={{...}} title="Title" expanded={true} classes={{...}} amp={true}>
             <WithStyles(AmpExpandableSection) ExpandIcon={[Function: ShouldUpdate]} CollapseIcon={[Function: ShouldUpdate]} title="Title">
-              <AmpExpandableSection classes={{...}} ExpandIcon={[Function: ShouldUpdate]} CollapseIcon={[Function: ShouldUpdate]} title="Title" expanded={false}>
+              <AmpExpandableSection ExpandIcon={[Function: ShouldUpdate]} CollapseIcon={[Function: ShouldUpdate]} title="Title" classes={{...}} expanded={false}>
                 <HelmetWrapper defer={true} encodeSpecialCharacters={true}>
                   <SideEffect(NullComponent) defer={true} encodeSpecialCharacters={true} script={{...}}>
                     <NullComponent defer={true} encodeSpecialCharacters={true} script={{...}} />
                   </SideEffect(NullComponent)>
                 </HelmetWrapper>
-                <amp-accordion disable-session-states={true} class="MoovAmpExpandableSection-accordion-152">
-                  <section className="MoovAmpExpandableSection-section-154">
-                    <WithStyles(Typography) variant="subheading" component="h3" className="MoovAmpExpandableSection-title-153">
-                      <Typography classes={{...}} variant="subheading" component="h3" className="MoovAmpExpandableSection-title-153" align="inherit" color="default" gutterBottom={false} headlineMapping={{...}} noWrap={false} paragraph={false}>
-                        <h3 className="MuiTypography-root-159 MuiTypography-subheading-166 MoovAmpExpandableSection-title-153">
+                <amp-accordion disable-session-states={true} class="MoovAmpExpandableSection-accordion-180">
+                  <section className="MoovAmpExpandableSection-section-182">
+                    <WithStyles(Typography) variant="subheading" component="h3" className="MoovAmpExpandableSection-title-181">
+                      <Typography variant="subheading" component="h3" className="MoovAmpExpandableSection-title-181" theme={{...}} classes={{...}} align="inherit" color="default" gutterBottom={false} headlineMapping={{...}} noWrap={false} paragraph={false}>
+                        <h3 className="MuiTypography-root-187 MuiTypography-subheading-194 MoovAmpExpandableSection-title-181">
                           Title
-                          <pure(ExpandMore) className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-collapse-157">
-                            <ExpandMore className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-collapse-157">
-                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-collapse-157">
-                                <SvgIcon classes={{...}} className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-collapse-157" color="inherit" viewBox="0 0 24 24">
-                                  <svg className="MuiSvgIcon-root-183 MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-collapse-157" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true">
-                                    <g>
-                                      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                                    </g>
+                          <pure(ExpandMoreIcon) className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-collapse-185">
+                            <ExpandMoreIcon className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-collapse-185">
+                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-collapse-185">
+                                <SvgIcon className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-collapse-185" classes={{...}} color="inherit" component="svg" fontSize="default" viewBox="0 0 24 24">
+                                  <svg className="MuiSvgIcon-root-222 MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-collapse-185" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true" role="presentation">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                                    <path fill="none" d="M0 0h24v24H0z" />
                                   </svg>
                                 </SvgIcon>
                               </WithStyles(SvgIcon)>
-                            </ExpandMore>
-                          </pure(ExpandMore)>
-                          <pure(ExpandMore) className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-expand-156">
-                            <ExpandMore className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-expand-156">
-                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-expand-156">
-                                <SvgIcon classes={{...}} className="MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-expand-156" color="inherit" viewBox="0 0 24 24">
-                                  <svg className="MuiSvgIcon-root-183 MoovAmpExpandableSection-toggle-155 MoovAmpExpandableSection-expand-156" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true">
-                                    <g>
-                                      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                                    </g>
+                            </ExpandMoreIcon>
+                          </pure(ExpandMoreIcon)>
+                          <pure(ExpandMoreIcon) className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-expand-184">
+                            <ExpandMoreIcon className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-expand-184">
+                              <WithStyles(SvgIcon) className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-expand-184">
+                                <SvgIcon className="MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-expand-184" classes={{...}} color="inherit" component="svg" fontSize="default" viewBox="0 0 24 24">
+                                  <svg className="MuiSvgIcon-root-222 MoovAmpExpandableSection-toggle-183 MoovAmpExpandableSection-expand-184" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true" role="presentation">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                                    <path fill="none" d="M0 0h24v24H0z" />
                                   </svg>
                                 </SvgIcon>
                               </WithStyles(SvgIcon)>
-                            </ExpandMore>
-                          </pure(ExpandMore)>
+                            </ExpandMoreIcon>
+                          </pure(ExpandMoreIcon)>
                         </h3>
                       </Typography>
                     </WithStyles(Typography)>
-                    <div className="MoovAmpExpandableSection-body-158">
+                    <div className="MoovAmpExpandableSection-body-186">
                       Foo
                     </div>
                   </section>

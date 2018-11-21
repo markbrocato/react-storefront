@@ -5,29 +5,29 @@ exports[`AppBar should render 1`] = `
   <MuiThemeProvider theme={{...}}>
     <inject-WithStyles(Header)>
       <WithStyles(Header) menu={{...}} amp={false}>
-        <Header classes={{...}} menu={{...}} amp={false} responsive={false} MenuIcon="test-file-stub">
+        <Header menu={{...}} amp={false} classes={{...}} responsive={false} MenuIcon="test-file-stub">
           <div className="RSFAppBar-root-1">
             <div className="RSFAppBar-wrap-5">
               <WithStyles(Toolbar) disableGutters={true} classes={{...}}>
-                <Toolbar classes={{...}} disableGutters={true}>
-                  <div className="MuiToolbar-root-12 RSFAppBar-toolBar-4">
+                <Toolbar disableGutters={true} classes={{...}} variant="regular">
+                  <div className="MuiToolbar-root-12 RSFAppBar-toolBar-4 MuiToolbar-regular-14">
                     <Hidden mdUp={false} implementation="css" lgDown={false} lgUp={false} mdDown={false} smDown={false} smUp={false} xlDown={false} xlUp={false} xsDown={false} xsUp={false}>
                       <WithStyles(HiddenCss) mdUp={false} lgDown={false} lgUp={false} mdDown={false} smDown={false} smUp={false} xlDown={false} xlUp={false} xsDown={false} xsUp={false}>
-                        <HiddenCss classes={{...}} mdUp={false} lgDown={false} lgUp={false} mdDown={false} smDown={false} smUp={false} xlDown={false} xlUp={false} xsDown={false} xsUp={false}>
+                        <HiddenCss mdUp={false} lgDown={false} lgUp={false} mdDown={false} smDown={false} smUp={false} xlDown={false} xlUp={false} xsDown={false} xsUp={false} classes={{...}}>
                           <div className="">
                             <a on="tap:moov_menu.toggle" className="RSFAppBar-link-11">
                               <WithStyles(ToolbarButton) aria-label="Menu" color="inherit" onClick={[Function: res]} icon={{...}}>
-                                <ToolbarButton classes={{...}} aria-label="Menu" color="inherit" onClick={[Function: res]} icon={{...}}>
+                                <ToolbarButton aria-label="Menu" color="inherit" onClick={[Function: res]} icon={{...}} classes={{...}}>
                                   <WithStyles(IconButton) classes={{...}} aria-label="Menu" color="inherit" onClick={[Function: res]}>
-                                    <IconButton classes={{...}} aria-label="Menu" color="inherit" onClick={[Function: res]} disabled={false}>
-                                      <WithStyles(ButtonBase) className="MuiIconButton-root-30 MuiIconButton-colorInherit-31" centerRipple={true} focusRipple={true} disabled={false} aria-label="Menu" onClick={[Function: res]}>
-                                        <ButtonBase classes={{...}} className="MuiIconButton-root-30 MuiIconButton-colorInherit-31" centerRipple={true} focusRipple={true} disabled={false} aria-label="Menu" onClick={[Function: res]} disableRipple={false} tabIndex="0" type="button">
-                                          <button onBlur={[Function: handleEvent]} onFocus={[Function: value]} onKeyDown={[Function: value]} onKeyUp={[Function: value]} onMouseDown={[Function: handleEvent]} onMouseLeave={[Function: handleEvent]} onMouseUp={[Function: handleEvent]} onTouchEnd={[Function: handleEvent]} onTouchMove={[Function: handleEvent]} onTouchStart={[Function: handleEvent]} tabIndex="0" className="MuiButtonBase-root-36 MuiIconButton-root-30 MuiIconButton-colorInherit-31" type="button" disabled={false} aria-label="Menu" onClick={[Function: res]}>
-                                            <span className="MuiIconButton-label-35">
-                                              <div className="RSFToolbarButton-wrap-29">
+                                    <IconButton aria-label="Menu" color="inherit" onClick={[Function: res]} classes={{...}} disabled={false}>
+                                      <WithStyles(ButtonBase) className="MuiIconButton-root-32 MuiIconButton-colorInherit-33" centerRipple={true} focusRipple={true} disabled={false} aria-label="Menu" onClick={[Function: res]}>
+                                        <ButtonBase className="MuiIconButton-root-32 MuiIconButton-colorInherit-33" centerRipple={true} focusRipple={true} disabled={false} aria-label="Menu" onClick={[Function: res]} classes={{...}} component="button" disableRipple={false} disableTouchRipple={false} tabIndex="0" type="button">
+                                          <button className="MuiButtonBase-root-38 MuiIconButton-root-32 MuiIconButton-colorInherit-33" onBlur={[Function]} onFocus={[Function]} onKeyDown={[Function]} onKeyUp={[Function]} onMouseDown={[Function]} onMouseLeave={[Function]} onMouseUp={[Function]} onTouchEnd={[Function]} onTouchMove={[Function]} onTouchStart={[Function]} tabIndex="0" type="button" disabled={false} aria-label="Menu" onClick={[Function: res]}>
+                                            <span className="MuiIconButton-label-37">
+                                              <div className="RSFToolbarButton-wrap-31">
                                                 <WithStyles(SvgIcon) className="RSFAppBar-icon-3">
-                                                  <SvgIcon classes={{...}} className="RSFAppBar-icon-3" color="inherit" viewBox="0 0 24 24">
-                                                    <svg className="MuiSvgIcon-root-39 RSFAppBar-icon-3" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true">
+                                                  <SvgIcon className="RSFAppBar-icon-3" classes={{...}} color="inherit" component="svg" fontSize="default" viewBox="0 0 24 24">
+                                                    <svg className="MuiSvgIcon-root-41 RSFAppBar-icon-3" focusable="false" viewBox="0 0 24 24" color={[undefined]} aria-hidden="true" role="presentation">
                                                       <test-file-stub />
                                                     </svg>
                                                   </SvgIcon>
@@ -35,13 +35,15 @@ exports[`AppBar should render 1`] = `
                                                 <div />
                                               </div>
                                             </span>
-                                            <WithStyles(TouchRipple) innerRef={[Function: value]} center={true}>
-                                              <TouchRipple classes={{...}} center={true}>
-                                                <TransitionGroup component="span" enter={true} exit={true} className="MuiTouchRipple-root-45" childFactory={[Function: childFactory]}>
-                                                  <span className="MuiTouchRipple-root-45" />
-                                                </TransitionGroup>
-                                              </TouchRipple>
-                                            </WithStyles(TouchRipple)>
+                                            <NoSsr defer={false} fallback={{...}}>
+                                              <WithStyles(TouchRipple) innerRef={[Function]} center={true}>
+                                                <TouchRipple center={true} classes={{...}}>
+                                                  <TransitionGroup component="span" enter={true} exit={true} className="MuiTouchRipple-root-50" childFactory={[Function: childFactory]}>
+                                                    <span className="MuiTouchRipple-root-50" />
+                                                  </TransitionGroup>
+                                                </TouchRipple>
+                                              </WithStyles(TouchRipple)>
+                                            </NoSsr>
                                           </button>
                                         </ButtonBase>
                                       </WithStyles(ButtonBase)>
