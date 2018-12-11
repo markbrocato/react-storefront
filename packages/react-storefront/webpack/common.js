@@ -146,11 +146,6 @@ function createPlugins(root) {
       allowExternal: true,
       verbose: false
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['bootstrap'], // needed to put webpack bootstrap code before chunks
-      filename: '[name].[hash].js',
-      minChunks: Infinity
-    }),
     new HtmlWebpackPlugin({
       filename: 'install-service-worker.html',
       title: 'Installing Service Worker...',

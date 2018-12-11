@@ -1,5 +1,4 @@
 const path = require('path');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin
 const OpenBrowserPlugin = require('open-browser-webpack-plugin')
 const WriteFilePlugin = require('write-file-webpack-plugin')
@@ -69,6 +68,7 @@ module.exports = {
     }
 
     return ({ url = 'http://localhost:8080' } = {}) => Object.assign(createClientConfig(root, { entries, alias }), {
+      mode: 'development',
       devtool: 'inline-cheap-module-source-map',
       module: {
         rules: createLoaders(path.resolve(root, 'src'), { eslintConfig })
@@ -117,6 +117,18 @@ module.exports = {
     }
 
     return Object.assign(createClientConfig(root, { entries, alias }), {
+      mode: 'production',
+      optimization: {
+        splitChunks: {
+          name: 'bootstrap', // needed to put webpack bootstrap code before chunks
+          minChunks: Infinity,
+          cacheGroups: {
+            vendors: {
+              filename: '[name].[hash].js'
+            }
+          }
+        }
+      },
       module: {
         rules: createLoaders(path.resolve(root, 'src'), { eslintConfig: './eslint-client' })
       },
@@ -130,20 +142,6 @@ module.exports = {
           'process.env.NODE_ENV': JSON.stringify('production'),
           'process.env.MOOV_ENV': JSON.stringify('production'),
           'process.env.PUBLIC_URL': JSON.stringify('') // needed for registerServiceWorker.js
-        }),
-        new UglifyJSPlugin({
-          uglifyOptions: {
-            compress: {
-              warnings: false
-            },
-            mangle: {
-              safari10: true
-            },
-            output: {
-              comments: false
-            },
-            ie8: false
-          }
         }),
         new StatsWriterPlugin({
           filename: path.relative(dest, path.join(root, 'scripts', 'build', 'stats.json'))

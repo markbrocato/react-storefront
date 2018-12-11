@@ -19,6 +19,7 @@ module.exports = {
     }
 
     return ({ entry, plugins, output, target, resolve }) => merge(createServerConfig(root, alias), {
+      mode: 'development',
       entry,
       output: merge(output,
         {
@@ -57,6 +58,10 @@ module.exports = {
     }
 
     return ({ entry, plugins, output, target, resolve }) => merge(createServerConfig(root, alias), {
+      mode: 'production',
+      optimization: {
+        minimize: false
+      },
       entry, 
       output,
       target,
