@@ -19,6 +19,8 @@ import { renderAmpAnalyticsTags } from './Track'
 import createRequest from './platform/createRequest'
 import getStats from 'react-storefront-stats'
 
+console.log('Server Code');
+
 export default class Server {
 
   /**
