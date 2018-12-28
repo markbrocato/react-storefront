@@ -193,6 +193,7 @@ export default types
         if (isAlive(self)) {
           self.addItems(results.items)
           self.setTotal(results.total)
+          self.setFacetGroups(results.facetGroups)
         }
       }
       finally {
@@ -237,6 +238,13 @@ export default types
      */
     setTotal(total){
       self.total = total
+    },
+    /**
+     * Updates goups of filters
+     * @param {Object} facetGroups 
+     */
+    setFacetGroups(facetGroups){
+      self.facetGroups = facetGroups
     },
     /**
      * Toggles the layout
