@@ -4,12 +4,14 @@
  */
 import { cache, cacheProxiedAssets as doCacheProxiedAssets, FAR_FUTURE, ONE_DAY } from './cache'
 import { redirectTo, redirectToHttps } from './redirect'
+import { rewriteCookies as doRewriteCookies } from './cookies'
 
 /**
  * Run this in moov_response_header_transform.js
  */
 export default function responseHeaderTransform({ 
-  cacheProxiedAssets={ serverMaxAge: ONE_DAY } 
+  cacheProxiedAssets={ serverMaxAge: ONE_DAY },
+  rewriteCookies=false 
 } = {}) {
 
   if (env.__static_origin_path__) {
@@ -88,6 +90,10 @@ export default function responseHeaderTransform({
   // Doing so would prevent caching as varnish will not cache a response with a set-cookie header.
   if (headers.header('x-moov-cache')) {
     headers.removeAllHeaders('set-cookie')
+  }
+
+  if (rewriteCookies) {
+    doRewriteCookies()
   }
 
 }

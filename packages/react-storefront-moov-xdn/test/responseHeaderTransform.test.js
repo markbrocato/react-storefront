@@ -12,7 +12,8 @@ describe('responseHeaderTransform', () => {
       headers: JSON.stringify({}),
       secure: 'true',
       host: 'example.com',
-      path: '/foo/bar'
+      path: '/foo/bar',
+      host_no_port: 'example.com'
     }
     global.__webpack_hash__ = 'ABC123'
     reset()
@@ -190,6 +191,22 @@ describe('responseHeaderTransform', () => {
       global.env.path = path
       responseHeaderTransform({ cacheProxiedAssets: { serverMaxAge: 60 }})
       expect(headers.header('cache-control')).toBe('s-maxage=60')
+    })
+  })
+
+  it('should rewrite set-cookie headers when rewriteCookies is true', () => {
+    global.headers_full = {
+      fields: [
+        ['set-cookie', 'foo=bar; domain=origin.com']
+      ]
+    }
+
+    responseHeaderTransform({ rewriteCookies: true })
+
+    expect(global.headers_full).toEqual({
+      fields: [
+        ['set-cookie', 'foo=bar; domain=example.com; path=/']
+      ]
     })
   })
 
