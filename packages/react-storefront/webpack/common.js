@@ -107,7 +107,7 @@ function createLoaders(sourcePath, { modules=false, plugins=[], assetsPath='.', 
       use: [babelLoader]
     },
     {
-      test: /\.(png|jpg|gif|otf|woff)$/,
+      test: /\.(png|jpg|gif|otf|woff|ttf)$/,
       use: [
         {
           loader: 'url-loader',
