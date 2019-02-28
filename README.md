@@ -62,6 +62,7 @@ npm link babel-plugin-react-storefront
 ### 5.11.0
 
 * Added `isLighthouse` helper function to conditionally load code when in Lighthouse
+* Added `AnalyticsProvider` for loading analytics on mount
 
 ### 5.10.2
 
