@@ -59,6 +59,10 @@ npm link babel-plugin-react-storefront
 
 ## Changelog
 
+### 5.11.0
+
+* Added `isLighthouse` helper function to conditionally load code when in Lighthouse
+
 ### 5.10.2
 
 * Fixed where links were unresponsive until all JavaScript was fully loaded.
