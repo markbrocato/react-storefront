@@ -63,6 +63,7 @@ npm link babel-plugin-react-storefront
 
 
 * Added `AnalyticsProvider` for loading analytics on mount
+* Added `AmpModal` component based on `<amp-lightbox>`.
 
 ### 5.10.2
 
