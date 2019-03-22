@@ -66,6 +66,10 @@ yarn release
 
 ## Changelog
 
+### 6.7.1
+
+* Removes unnecessary dependency on js-cookie.
+
 ### 6.7.0
 
 * Browsers that support source maps will now display original react-storefront source code when debugging.
