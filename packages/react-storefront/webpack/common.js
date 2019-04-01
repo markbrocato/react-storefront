@@ -68,6 +68,7 @@ function createLoaders(sourcePath, { envName, assetsPath='.', eslintConfig } = {
     {
       test: /\.js$/,
       enforce: 'pre',
+      exclude: [/node_modules/],
       use: [
         {
           loader: 'source-map-loader'
