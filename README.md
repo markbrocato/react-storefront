@@ -66,6 +66,10 @@ yarn release
 
 ## Changelog
 
+### 6.8.0
+
+* Fixes an issue where images sometimes do not show up in `AmpImageSwitcher` due to a bug in `amp-carousel` when rendering in a div with `display: flex`. https://github.com/ampproject/amphtml/issues/14519
+
 ### 6.7.0
 
 * Browsers that support source maps will now display original react-storefront source code when debugging.
